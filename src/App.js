@@ -72,16 +72,11 @@ class App extends Component {
   }
 
 
-  // displayFaceBox = (box) => {
-  //   this.setState({box: box});
-  // }
   displayFaceBox = (box) => {
     this.setState({box:box});
   }
 
-  // onInputChange = (event) => {
-  //   this.setState({input: event.target.value});
-  // }
+
   onInputChange = (event) => {
     this.setState({input:event.target.value});
   }
