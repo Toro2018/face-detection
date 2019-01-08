@@ -17,6 +17,7 @@ class Register extends React.Component {
 	onEmailChange=(event) => {
 		this.setState({email:event.target.value})
 	}
+	
 	onPasswordChange=(event) => {
 		this.setState({password:event.target.value})
 	}
@@ -47,18 +48,19 @@ class Register extends React.Component {
 					<main className="pa4 black-80">
 			  <div className="measure ">
 			    <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-			      <legend className="f1 fw6 ph0 mh0">Register</legend>
+			      <legend className="f1 fw6 ph0 mh0">Register/注册</legend>
 			       <div className="mt3">
-			        <label className="db fw6 lh-copy f6" htmlFor="name">Name</label>
+			        <label className="db fw6 lh-copy f6" htmlFor="name">Name/用户名</label>
 			        <input 
 			        className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
-			        type="text" name="name"  
+			        type="text" 
+			        name="name"  
 			        id="name"
 			        onChange={this.onNameChange}
 			        />
 			      </div>
 			      <div className="mt3">
-			        <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
+			        <label className="db fw6 lh-copy f6" htmlFor="email-address">Email/邮箱</label>
 			        <input 
 			        className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
 			        type="email" 
@@ -68,13 +70,13 @@ class Register extends React.Component {
 			        />
 			      </div>
 			      <div className="mv3">
-			        <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
+			        <label className="db fw6 lh-copy f6" htmlFor="password">Password/密码</label>
 			        <input 
 			        className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
 			        type="password" 
 			        name="password"  
 			        id="password"
-			         onChange={this.onPasswordChange}
+			        onChange={this.onPasswordChange}
 			        />
 			      </div>
 			    </fieldset>
@@ -83,7 +85,7 @@ class Register extends React.Component {
 			      onClick ={this.onSubmitSignIn}
 			      className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" 
 			      type="submit" 
-			      value="Register"
+			      value="Register/提交注册"
 			      />
 			    </div>
 			  </div>
